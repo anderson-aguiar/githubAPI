@@ -4,19 +4,30 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
+}
+.title-container{
+    max-width: 1430px;
+    width: 100%;
+    margin: 0 auto;
 }
 header h1{
     color: var(--color-font-primary);
     font-weight: 400;
     font-size: 24px;
-
+    margin-left: 20px;
 }
-@media (width >= 576px){
+@media (width >= 768px){
     header{
         justify-content: flex-start;
+        text-align: start;
     }
+
+}
+@media (width >= 1400px){
     header h1{
-        margin-left: 41px;
+        margin-left: 80px;
     }
 }
+
