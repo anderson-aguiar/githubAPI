@@ -1,4 +1,4 @@
-.btn{
+.btn button{
     color: var(--color-font-primary);
     background-color: var(--color-bg-secondary);
     height: 40px;
@@ -9,5 +9,6 @@
     margin-top: 27px;
     display: flex;
     align-items: center;
-    
+    border: none;
+    cursor: pointer;
 }

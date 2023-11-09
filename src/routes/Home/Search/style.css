@@ -1,7 +1,7 @@
 .card-container{
     background-color: var(--color-bg-tertiary);
     height: 270px;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 54px 31px;
 }
 .card-container h2{

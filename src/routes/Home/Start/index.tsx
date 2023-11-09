@@ -1,5 +1,7 @@
 import './styles.css';
 import Button from '../../../components/Button';
+import { Link } from 'react-router-dom';
+
 
 export default function Start() {
     return (
@@ -12,9 +14,9 @@ export default function Start() {
                     <div>
                         <p>DevSuperior - Escola de programação</p>
                     </div>
-                    <div>
+                    <Link to={"search"}>
                         <Button text='Começar' />
-                    </div>
+                    </Link>
                 </div>
             </main>
 
