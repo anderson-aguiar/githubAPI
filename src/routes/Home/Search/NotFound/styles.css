@@ -2,4 +2,10 @@
     font-size: 38px;
     font-weight: 500;
     padding-top: 64px;
+    text-align: center;
+}
+@media(width >= 576px){
+    .erro-tittle{
+        text-align: left;
+    }
 }

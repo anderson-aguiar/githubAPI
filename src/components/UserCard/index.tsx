@@ -15,10 +15,10 @@ export default function UserCard({ user } : Props) {
                     <img src={user?.avatar_url} alt={user.name} />
                     <div className='user-datas'>
                         <h3>Informações</h3>
-                        <div className='user-data'>Perfil: <a href={user?.html_url} target='_blank'> {user?.html_url}</a></div>
-                        <div className='user-data'>Seguidores: <p>{user?.followers}</p></div>
-                        <div className='user-data'>Localidade: <p>{user?.location}</p></div>
-                        <div className='user-data'>Nome: <p>{user?.name}</p></div>
+                        <div className='user-data flexDir'>Perfil: <a href={user?.html_url} target='_blank'> {user?.html_url}</a></div>
+                        <div className='user-data flexDir'>Seguidores: <p>{user?.followers}</p></div>
+                        <div className='user-data flexDir'>Localidade: <p>{user?.location}</p></div>
+                        <div className='user-data flexDir'>Nome: <p>{user?.name}</p></div>
                     </div>
                 </div>
             </div>

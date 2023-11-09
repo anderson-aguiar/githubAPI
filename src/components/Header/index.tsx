@@ -6,7 +6,7 @@ export default function Header() {
         <header>
             <div className='title-container'>
                 <Link to={"/"}>
-                    <h1 className=''>GitHub API</h1>
+                    <h1>GitHub API</h1>
                 </Link>
             </div>
         </header>

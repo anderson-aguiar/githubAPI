@@ -3,32 +3,40 @@ header{
     height: 62px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-
 }
 .title-container{
     max-width: 1430px;
     width: 100%;
-    margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 header h1{
     color: var(--color-font-primary);
     font-weight: 400;
     font-size: 24px;
-    padding-left: 20px;
+    
 }
 @media (width >= 768px){
     header{
         justify-content: flex-start;
         text-align: start;
+        padding-left: 20px;
+    }
+
+    .title-container{
+        justify-content: flex-start;
     }
 
 }
 @media (width >= 1400px){
-    header h1{
-        margin-left: 80px;
+    header{
+        padding-left: 80px;
+    }
+}
+@media (width >= 1600px){
+    header{
+        padding-left: 200px;
     }
 }
 

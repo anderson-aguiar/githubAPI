@@ -1,55 +1,129 @@
-.user-card-container{
+.user-card-container {
     background-color: var(--color-bg-quartenary);
-    height: 334px;
+    height: 440px;
     border-radius: 8px;
     margin-top: 54px;
     justify-content: center;
     display: flex;
     align-items: center;
-
 }
-.card-informations{
+
+.card-informations {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 790px;
+    padding: 10px;
 }
-.card-informations img{
-    width: 247px;
-    height: 247px;
+
+.card-informations img {
+    width: 110px;
+    height: 110x;
+    margin: 10px;
 }
-.user-datas{
+
+.user-datas {
     background-color: var(--color-bg-primary);
     max-width: 902px;
     width: 100%;
-    height: 247px;
     padding: 8px 14px 17px 8px;
-    margin-left: 29px;
-    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 }
-.user-datas h3{
+
+.user-datas h3 {
     color: var(--color-font-quartenary);
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 19px;
+    text-align: center;
 }
-.user-data{
+
+.user-data {
     border: 1px solid var(--color-card-border);
-    width: 790px;
-    height: 40px;
+    max-width: 750px;
+    width: 100%;
+    height: 50px;
     display: flex;
     align-items: center;
     padding: 10px 8px;
     margin-bottom: 5px;
-    border-radius:  4px;
+    border-radius: 4px;
     color: var(--color-font-secodary);
     font-weight: 700;
-    font-size: 26px;
+    font-size: 16px;
 }
-.user-data p, a{
+
+.user-data p,
+a {
     padding-left: 10px;
     font-weight: 400;
 }
-.user-data a, .user-data a:hover{
+
+.user-data a,
+.user-data a:hover {
     text-decoration: underline;
     color: #0029FF;
+}
+.flexDir{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+@media(width >= 576px){
+    .user-data{
+        font-size: 20px;
+        height: 60px;
+    }
+    .user-card-container {
+        height: 480px;
+    }
+    .user-datas h3 {
+        font-size: 24px;
+    }
+}
+@media(width >=1200px) {
+    .user-card-container {
+        height: 334px;
+    }
+    .card-informations img {
+        width: 247px;
+        height: 247px;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .user-datas {
+        height: 247px;
+        background-color: var(--color-bg-primary);
+        max-width: 902px;
+        padding: 8px 14px 17px 8px;
+        margin-left: 29px;
+        display: block;
+    }
+    .user-datas h3 {
+        font-size: 20px;
+        text-align: left;
+    }
+    .card-informations {
+        flex-direction: row;
+    }
+    .user-data {
+        width: 790px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        font-size: 26px;
+    }
+ 
+    .flexDir{
+      flex-direction: row;
+      justify-content: flex-start;
+    }
 }

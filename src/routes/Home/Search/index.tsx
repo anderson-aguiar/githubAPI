@@ -13,9 +13,7 @@ export default function Search() {
     }
     const navigate = useNavigate();
     const [name, setName] = useState<string>('');
-
     const [user, setUser] = useState<UserDTO | undefined>();
-
     const [formData, setFormData] = useState<FormData>({ login: '' })
 
     useEffect(() => {
@@ -32,13 +30,13 @@ export default function Search() {
         }
     }, [name]);
 
-    function handleInputChange(event: any) {
+    function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
         const value = event.target.value;
         const name = event.target.name;
         setFormData({ ...formData, [name]: value });
 
     }
-    function handleFormSubmit(event: any) {
+    function handleFormSubmit(event: React.FormEvent) {
         event.preventDefault();
         setName(formData.login)
     }
