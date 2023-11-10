@@ -1,27 +1,31 @@
-# React + TypeScript + Vite
+# Desafio Github API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Desafio desenvolvido como parte da aprovação do curso Desenvolvedor Moderno - Módulo Front end
 
-Currently, two official plugins are available:
+## Design do projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://www.figma.com/file/igQqM14f9sP17jyo54Y8vL/DesafioGithubAPI
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologias ultilizadas:
+- Typescript
+- ReactJS
+- HTML
+- CSS
 
-- Configure the top-level `parserOptions` property like this:
+## Critérios de correção
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Todos critérios a seguir devem ser contemplados:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1) Duas páginas com rotas funcionando, navegando entre elas.
+2) Quando buscar um usuário que existe, os dados do usuário devem aparecer conforme layout
+3) Quando buscar um usuário que não existe, deve aparecer uma mensagem conforme layout
+
+Opcional: deixe seu layout responsivo.
+
+## Para rodar o projeto:
+1 - Clone o projeto para sua maquina;
+2 - Você deve ter instalado em sua máquina o ```yarn```. Para saber como instalar [Acesse aqui](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
+2 - Navegue até a pasta do projeto e rode o comandado ```yarn``` para baixar as dependências do projeto;
+3 - Rode o comando ```yarn dev``` para subir a aplicação;
+4 - Para acessar digite no navegador o endereço ```http://127.0.0.1:5173/```
